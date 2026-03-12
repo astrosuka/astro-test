@@ -1,17 +1,43 @@
 ---
-
+import "../styles/global.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <h1 class="text-4xl">Astro</h1>
+
+    <div id="astro-faq" class="fade-in">
+      <details name="requirements">
+        <summary>Graduation Requirements</summary>
+        <p>
+          Requires 40 credits, including a passing grade in health, geography,
+          history, economics, and wood shop.
+        </p>
+      </details>
+      <details name="requirements">
+        <summary>System Requirements</summary>
+        <p>
+          Requires a computer running an operating system. The computer must
+          have some memory and ideally some kind of long-term storage. An input
+          device as well as some form of output device is recommended.
+        </p>
+      </details>
+      <details name="requirements">
+        <summary>Job Requirements</summary>
+        <p>
+          Requires knowledge of HTML, CSS, JavaScript, accessibility, web
+          performance, privacy, security, and internationalization, as well as a
+          dislike of broccoli.
+        </p>
+      </details>
+    </div>
+  </body>
 </html>
